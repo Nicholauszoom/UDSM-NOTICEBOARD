@@ -88,13 +88,7 @@
     </div>
 
    
-        <div class="mx-auto w-4/5 my-8">
-            <a 
-                href="#" 
-                class="uppercase border border-gray-500 text-lg py-4 px-6 rounded transition transition-all bg-gray-800 text-white hover:bg-white hover:text-gray-800">
-                Create New Post
-            </a>
-        </div>
+        
     
     
     <div class="md:grid lg:grid-cols-3 gap-20 w-4/5 mx-auto py-15 ">

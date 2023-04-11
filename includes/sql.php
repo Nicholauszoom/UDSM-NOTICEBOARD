@@ -136,10 +136,11 @@ function tableExists($table){
   /* Find all user by
   /* Joining users table and user gropus table
   /*--------------------------------------------------------------*/
-  function find_all_user(){
+
+   function find_all_user(){
       global $db;
       $results = array();
-      $sql = "SELECT u.id,u.name,u.username,u.user_level,u.status,u.last_login,";
+      $sql = "SELECT u.id,u.name,u.username,u.user_level,u.registrationNo,u.status,u.last_login";
       $sql .="g.group_name ";
       $sql .="FROM users u ";
       $sql .="LEFT JOIN user_groups g ";
@@ -147,6 +148,10 @@ function tableExists($table){
       $result = find_by_sql($sql);
       return $result;
   }
+
+
+
+
   /*--------------------------------------------------------------*/
   /* Function to update the last log in of a user
   /*--------------------------------------------------------------*/
@@ -222,6 +227,43 @@ function tableExists($table){
 
    }
 
+ /*--------------------------------------------------------------*/
+   /* Function for Finding all public name
+   /* JOIN with media database table
+   /*--------------------------------------------------------------*/
+    function join_public_table(){
+     global $db;
+     $sql  =" SELECT p.id,p.title,p.description,p.date,p.media_id";
+    // $sql  .=" AS categorie,m.file_name AS image,s.supplier_name AS supplie";
+    $sql  .=" As media,m.file_name AS image";
+    $sql  .=" FROM public p";
+    // $sql  .=" LEFT JOIN supplier s ON s.id = p.supplier_id";
+   // $sql  .=" LEFT JOIN media m ON m.id = p.media_id";
+     $sql  .=" LEFT JOIN media m ON m.id = p.media_id";
+    $sql  .=" ORDER BY p.id ASC";
+    return find_by_sql($sql);
+
+   }
+
+   
+
+    /*--------------------------------------------------------------*/
+   /* Function for Finding all course name
+   /* JOIN with categorie  and media database table
+   /*--------------------------------------------------------------*/
+  // function join_course_table(){
+  //    global $db;
+  //    $sql  =" SELECT c.name";
+  //   // $sql  .=" AS categorie,m.file_name AS image,s.supplier_name AS supplie";
+  //   $sql  .=" AS categorie,m.file_name AS image";
+  //   $sql  .=" FROM course c";
+  //   $sql  .=" LEFT JOIN categories c ON c.id = p.categorie_id";
+  //   // $sql  .=" LEFT JOIN supplier s ON s.id = p.supplier_id";
+  //   $sql  .=" LEFT JOIN media m ON m.id = p.media_id";
+  //   $sql  .=" ORDER BY p.id ASC";
+  //   return find_by_sql($sql);
+
+  //  }
 
 
 
@@ -328,7 +370,7 @@ function tableExists($table){
   /*--------------------------------------------------------------*/
  function find_recent_product_added($limit){
    global $db;
-   $sql   = " SELECT p.id,p.name,p.sale_price,p.media_id,c.name AS categorie,";
+   $sql   = " SELECT p.id,p.name,p.sale_price,p.date,p.media_id,c.name AS categorie,";
    $sql  .= "m.file_name AS image FROM products p";
    $sql  .= " LEFT JOIN categories c ON c.id = p.categorie_id";
    $sql  .= " LEFT JOIN media m ON m.id = p.media_id";

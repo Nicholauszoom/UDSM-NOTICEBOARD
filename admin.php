@@ -10,7 +10,7 @@
  $c_sale          = count_by_id('sales');
  $c_user          = count_by_id('users');
  
- $recent_products = find_recent_product_added('5');
+ $recent_products = find_recent_product_added('3');
 
 ?>
 <?php include_once('layouts/header.php'); ?>
@@ -146,18 +146,21 @@
     </div>
    </div>
   </div> -->
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <strong>
-          <span class="glyphicon glyphicon-th"></span>
-          <span>Recently Added Announcements</span>
-        </strong>
-      </div>
-      <div class="panel-body">
+  
+    <div class="w-4/5 m-auto text-center">
+        <div class="py-12 border-b border-gray-200">
+            <h1 class="text-6xl pt-8 pb-8">
+                Recent Posted Annoucements
+            </h1>
 
-        <div class="list-group">
-      <?php foreach ($recent_products as  $recent_product): ?>
+            <span class="font-light text-gray-500 italic">
+                 <?php echo display_msg($msg); ?>
+            </span>
+        </div>
+    </div>
+
+     <!--     <div class="list-group">
+    <?php foreach ($recent_products as  $recent_product): ?>
             <a class="list-group-item clearfix" href="edit_product.php?id=<?php echo    (int)$recent_product['id'];?>">
                 <h4 class="list-group-item-heading">
                  <?php if($recent_product['media_id'] === '0'): ?>
@@ -170,20 +173,53 @@
                   <span class="label label-warning pull-right">
                 <!-- $<?php echo remove_junk(first_character($recent_product['date'])); ?>
                   </span>-->
-                </h4>
+              <!--  </h4>
                 <span class="list-group-item-text pull-right">
                 <?php echo remove_junk(first_character($recent_product['categorie'])); ?>
               </span>
           </a>
-      <?php endforeach; ?>
-    </div>
-  </div>
- </div>
-</div>
- </div>
-  <div class="row">
+      <?php endforeach; ?>-->
 
-  </div>
+
+
+
+
+
+ <div class="md:grid lg:grid-cols-3 gap-20 w-4/5 mx-auto py-15 ">
+        <!-- Review Item -->
+ <?php foreach ($recent_products as  $recent_product): ?>
+              <div class="text-center pt-8 pb-4">
+
+                 <?php if($recent_product['media_id'] === '0'): ?>
+                    <img class="shadow-xl rounded-md" src="uploads/products/no_image.png" alt="">
+                  <?php else: ?>
+                  <img class="shadow-xl rounded-md" src="uploads/products/<?php echo $recent_product['image'];?>" alt="" />
+                  
+                <?php endif;?>
+
+                <h2 class="text-gray-700 font-bold text-3xl py-2">
+                  <?php echo remove_junk(first_character($recent_product['name']));?>
+                </h2>
+
+                <span class="text-gray-500">
+                    For <span class="italic text-sm text-gray-800"> <?php echo remove_junk(first_character($recent_product['categorie'])); ?>
+                </span>
+                 <span class="text-gray-500 ">
+                    At <span class="italic text-sm text-gray-800"><?php echo remove_junk(first_character($recent_product['date'])); ?>
+                </span>
+
+                <!--<a href="show_annoucement.php?id=<?php echo (int)$product['id'];?>" class="uppercase border border-gray-500 text-gray-600 text-lg py-4 px-12 rounded transition transition-all hover:bg-gray-800 hover:text-white ">
+                    Keep Reading
+                </a>-->
+            </div>
+         <?php endforeach; ?>
+    </div>
+
+
+
+
+
+
 
 
 

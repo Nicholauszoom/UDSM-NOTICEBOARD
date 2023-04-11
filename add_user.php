@@ -4,11 +4,14 @@
   // Checkin What level user has permission to view this page
   page_require_level(1);
   $groups = find_all('user_groups');
+  $all_categories=find_all('categories');
+  $all_course=find_all('course');
+
 ?>
 <?php
   if(isset($_POST['add_user'])){
 
-   $req_fields = array('full-name','username','password','level' );
+   $req_fields = array('full-name','username','password','level','registrationNo','categorie','course' );
    validate_fields($req_fields);
 
    if(empty($errors)){
@@ -16,11 +19,14 @@
        $username   = remove_junk($db->escape($_POST['username']));
        $password   = remove_junk($db->escape($_POST['password']));
        $user_level = (int)$db->escape($_POST['level']);
+       $registrationNo = remove_junk($db->escape($_POST['registrationNo']));
+       $categorie_id   = (int)($db->escape($_POST['categorie']));
+       $course_id = (int)$db->escape($_POST['course']);
        $password = sha1($password);
         $query = "INSERT INTO users (";
-        $query .="name,username,password,user_level,status";
+        $query .="name,username,password,user_level,registrationNo,categorie_id,course_id,status";
         $query .=") VALUES (";
-        $query .=" '{$name}', '{$username}', '{$password}', '{$user_level}','1'";
+        $query .=" '{$name}', '{$username}', '{$password}', '{$user_level}', '{ $registrationNo }','{ $categorie_id}','{ $course_id}','1'";
         $query .=")";
         if($db->query($query)){
           //sucess
@@ -70,6 +76,30 @@
                 <?php endforeach;?>
                 </select>
             </div>
+             <div class="form-group">
+                <label for="registrationNo">RegistrationNo</label>
+                <input type="text" class="form-control" name ="registrationNo"  placeholder="Registration#">
+            </div>
+             <div class="form-group">
+                    <select class="form-control" name="categorie">
+                      <option value="">Select Department</option>
+                    <?php  foreach ($all_categories as $categorie_id): ?>
+                      <option value="<?php echo (int)$categorie_id['id'] ?>">
+                        <?php echo $categorie_id['name'] ?>
+                      </option>
+                    <?php endforeach; ?>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control" name="course">
+                      <option value="">Select Course</option>
+                    <?php  foreach ($all_course as $course_id): ?>
+                      <option value="<?php echo (int)$course_id['id'] ?>">
+                        <?php echo $course_id['cos_name'] ?>
+                      </option>
+                    <?php endforeach; ?>
+                    </select>
+                  </div>
             <div class="form-group clearfix">
               <button type="submit" name="add_user" class="btn btn-primary">Add User</button>
             </div>

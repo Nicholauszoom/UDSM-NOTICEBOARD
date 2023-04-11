@@ -7,8 +7,13 @@
            echo remove_junk($page_title);
             elseif(!empty($user))
            echo ucfirst($user['name']);
-            else echo "Inventory Management System";?>
+            else echo "UDSM NoticeBoard | ";?>
     </title>
+    
+  <!-- Favicons -->
+  <link href="https://www.udsm.ac.tz/web/themes/udsm/layouts/main/img/logo_ud.png" rel="icon">
+  <link href="https://www.udsm.ac.tz/web/themes/udsm/layouts/main/img/logo_ud.png">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
     <link rel="stylesheet" href="libs/css/main.css" />
@@ -18,10 +23,11 @@
   <body>
   <?php  if ($session->isUserLoggedIn(true)): ?>
     <header id="header">
-      <div class="logo pull-left"> 
- <img class="img-avatar img-circle" src="https://udsm.ac.tz//upload/galleryphoto/20210428_081523_177_udsm%20logo.png" alt="" />
-                          </div>
+     
       <div class="header-content">
+         <div class="logo pull-left"> 
+         <img class="img-avatar img-circle" src="https://udsm.ac.tz//upload/galleryphoto/20210428_081523_177_udsm%20logo.png" alt="" />
+          </div>
       <div class="header-date pull-left">
         <strong><?php echo date("F j, Y, g:i a");?></strong>
       </div>

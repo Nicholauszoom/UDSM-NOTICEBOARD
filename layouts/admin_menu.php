@@ -24,9 +24,20 @@
       <span>University</span>
     </a>
     <ul class="nav submenu">
-       <li><a href="college.php">Manage College</a> </li>
+       <li><a href="#">Manage College</a> </li>
       <li><a href="categorie.php">Manage Department</a> </li>
       <li><a href="course.php">Manage Course</a> </li>
+   </ul>
+  </li>
+
+  <li>
+    <a href="#" class="submenu-toggle">
+      <i class="glyphicon glyphicon-bell"></i>
+      <span>Public Announcements</span>
+    </a>
+    <ul class="nav submenu">
+       <li><a href="product.php">Manage Public Announcement</a> </li>
+       <li><a href="public_annnoucement.php">Add Public Announcement</a> </li>
    </ul>
   </li>
   
@@ -51,3 +62,11 @@
   </li>
  
 </ul>
+
+
+
+
+
+
+
+

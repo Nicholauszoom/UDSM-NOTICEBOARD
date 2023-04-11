@@ -6,7 +6,7 @@
 ?>
 <?php
 $product = find_by_id('products',(int)$_GET['id']);
-$all_categories = find_all('categories');
+// $all_categories = find_all('categories');
 $all_photo = find_all('media');
 $all_supplier = find_all('supplier');
 
