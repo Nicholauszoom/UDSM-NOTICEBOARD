@@ -32,13 +32,57 @@
   <!-- Vendor CSS Files -->
  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
+ <style media="screen">
+    p img{
+      width: 100%
+    }
+  </style>
+  <link rel="stylesheet" href="https://www.aru.ac.tz/site/css/master.min.css">
+
+
+<style>
+
+    .event-main-div{
+      border:1px solid #D55E1C;
+    }
+
+    .event-main-title{
+      border-bottom:1px solid #D55E1C;
+    }
+    
+    .event-main-title a:hover{ 
+      color:#36454F !important;
+    }
+
+    .event-div:hover{
+      background-color: #f5f5f5;
+    }
+
+    .project-main-div{
+      border:1px solid #2752A1;
+    }
+
+    .project-main-title{
+      border-bottom:1px solid #2752A1;
+    }
+    
+    .project-main-title a:hover{ 
+      color:#36454F !important;
+    }
+
+    .project-div:hover{
+      background-color: #f5f5f5;
+    }
+
+  </style>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -54,202 +98,230 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="logo me-auto"><img src="https://www.udsm.ac.tz/web/themes/udsm/layouts/main/img/logo_ud.png" alt="" class="img-fluid"></a>
 
-      <nav id="navbar" class="navbar " >
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="/userDash">User Dashboard</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="login_v2.php">Login In</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+     
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="https://flowbite.com/" class="flex items-center">
+      <img  src="https://www.udsm.ac.tz/web/themes/udsm/layouts/main/img/logo_ud.png" class="h-8 mr-3" alt="Flowbite Logo">
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">NOTICE BOARD</span>
+  </a>
+  <div class="flex md:order-2">
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> <a href="login_v2.php" >Login</a></button>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    
+  </div>
+  </div>
+</nav>
+<!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center bg-success">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1></h1>
-          <h2>We are team of talented designers making websites with Bootstrap</h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-          </div>
+     <div class="home-page row my-20">
+    
+    <div class="container max-1920" >
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                                                    
+                                       <div class="carousel-item active" style="background: #2752A1">
+                     <div class="row">
+                         <div class="col-md-4 my-auto ">
+                             <div class="slider-content px-4 px-xs-0 text-white">
+                                                               
+                                   <h4><b>UDSM-Notice Board</b></h4>
+                                   <hr class="bg-white">
+                                   <h6 class="text-justify">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+
+Ardhi... </h6>
+                                 
+                                                                                           </div>
+                         </div>
+                         <div class="col-md-8 bg-white px-0">
+                             <!-- aspect ration on cropper for image is 16/7-->
+
+                                                            <img class="d-block w-100" src="uploads/image/UNIT14_Hongera sana Prof. Carolyne Nombo.jpeg" alt="">
+                                                      </div>
+
+                          <div class="col-md-12">
+                            <div class="row px-3 w-100">
+                              <div class="col-md-4">  </div>
+                              <div class="col-md-8 text-justify text-white py-3 px-4">
+                                     
+                              </div>
+                            </div>
+                          </div>
+                         
+                     </div>
+
+                   </div>
+                                                          
+                                       <div class="carousel-item " style="background: #2752A1">
+                     <div class="row">
+                         <div class="col-md-4 my-auto ">
+                             <div class="slider-content px-4 px-xs-0 text-white">
+                                                               
+                                   <h4><b>UDSM-Notice Board</b></h4>
+                                   <hr class="bg-white">
+                                   <h6 class="text-justify">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+Ardhi... </h6>
+                                   
+
+                                                                                           </div>
+                         </div>
+                         <div class="col-md-8 bg-white px-0">
+                             <!-- aspect ration on cropper for image is 16/7-->
+
+                                                            <img class="d-block w-100"  src="uploads/image/coict2.JPG"" alt="">
+                                                      </div>
+
+                          <div class="col-md-12">
+                            <div class="row px-3 w-100">
+                              <div class="col-md-4">  </div>
+                              <div class="col-md-8 text-justify text-white py-3 px-4">
+                                     
+                              </div>
+                            </div>
+                          </div>
+                         
+                     </div>
+
+                   </div>
+                                                          
+                                       <div class="carousel-item " style="background: #2752A1">
+                     <div class="row">
+                         <div class="col-md-4 my-auto ">
+                             <div class="slider-content px-4 px-xs-0 text-white">
+                                                               
+                                   <h4><b>UDSM-Notice Board</b></h4>
+                                   <hr class="bg-white">
+                                   <h6 class="text-justify">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+
+Ardhi... </h6>
+                                 
+
+                                                                                           </div>
+                         </div>
+                         <div class="col-md-8 bg-white px-0">
+                             <!-- aspect ration on cropper for image is 16/7-->
+
+                                                            <img class="d-block w-100" src="uploads/image/UNIT14_Hongera sana Prof. Carolyne Nombo.jpeg" alt="">
+                                                      </div>
+
+                          <div class="col-md-12">
+                            <div class="row px-3 w-100">
+                              <div class="col-md-4">  </div>
+                              <div class="col-md-8 text-justify text-white py-3 px-4">
+                                     
+                              </div>
+                            </div>
+                          </div>
+                         
+                     </div>
+
+                   </div>
+                                                          
+                                       <div class="carousel-item " style="background: #2752A1">
+                     <div class="row">
+                         <div class="col-md-4 my-auto ">
+                             <div class="slider-content px-4 px-xs-0 text-white">
+                                                               
+                                   <h4><b>UDSM-Notice Board</b></h4>
+                                   <hr class="bg-white">
+                                   <h6 class="text-justify">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+
+Ardhi... </h6>
+
+                                                                                           </div>
+                         </div>
+                         <div class="col-md-8 bg-white px-0">
+                             <!-- aspect ration on cropper for image is 16/7-->
+
+                                                                        <img class="d-block w-100"  src="uploads/image/UNIT14_Hongera sana Prof. Carolyne Nombo.jpeg" alt="">                                                      </div>
+
+                          <div class="col-md-12">
+                            <div class="row px-3 w-100">
+                              <div class="col-md-4">  </div>
+                              <div class="col-md-8 text-justify text-white py-3 px-4">
+                                     
+                              </div>
+                            </div>
+                          </div>
+                         
+                     </div>
+
+                   </div>
+                                                       
+
+            </div>
+
+            
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
     </div>
-
-  </section><!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about ">
-      <div class="container" data-aos="fade-up">
+   
+        <div class="col-12 mt-5 main-content">
+          <div class="main-content-inside">
 
-        <div class="section-title">
-          <h2 class="text-danger">About Us</h2>
-        </div>
+            
+              <div class="container px-0">
+                    
+                    <div class="row">
 
-        <div class="row content">
-          <div class="col-lg-6">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line text-danger"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line text-danger"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line text-danger"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="#" class="btn-learn-more text-danger  " style="solid #c51a1a;">Learn More</a>
-          </div>
-        </div>
+                                                       <?php foreach ($public as $publics):?>
+                          
+                          <div class="col-md-4 my-2">
+                            <div class="row card-announcement">
+                                 <img src="uploads/products/<?php echo $publics['image']; ?>" class="w-100" alt="">
+                              <h5 class="title" style="background-color:#F6BE00" >
+                                    <?php echo remove_junk($publics['title']); ?>
+                              </h5>
 
-      </div>
-    </section><!-- End About Us Section -->
-
-
-      <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-      
-     <?php foreach ($public as $publics):?>
-     
-
-        <div class="row  my-4">
-
-          <div class="col-lg-10 ">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="card-img-top">
-                
-                  <img class="img-fluid" src="uploads/products/<?php echo $publics['image']; ?>" alt="">
-              
-     </div>
-              <div class="member-info">
-                <h4 class="text-danger">  <?php echo remove_junk($publics['title']); ?></h4>
-                <p> <?php echo remove_junk($publics['description']); ?></p>
-                 <span><?php echo read_date($publics['date']); ?></span>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill "></i></a>
-                  <a href=""><i class="ri-facebook-fill "></i></a>
-                  <a href=""><i class="ri-instagram-fill "></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill "></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-          
-<?php endforeach; ?>
-         
-
-        </div>
-
-
- <div class="rounded-lg border bg-white dark:border-neutral-600 dark:bg-neutral-800">
-    <div class="p-4">
-      
-  <div id="carouselExampleCaptions" class="relative touch-pan-y" data-te-carousel-init="" data-te-carousel-slide="" data-te-carousel-pointer-event="">
-    <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0" data-te-carousel-indicators="">
-      <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="0" class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none" aria-label="Slide 1"></button>
-      <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="1" class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none !opacity-100" aria-label="Slide 2" data-te-carousel-active="" aria-current="true"></button>
-      <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="2" class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none" aria-label="Slide 3"></button>
+                                                               
+                                          <div class="col-md-12 px-0">
+                                  
+                                      <p class="text-secondary" style="color:#FFFF">
+                                           <?php echo remove_junk($publics['description']); ?>
+                                      </p>
+                                      <p class="text-secondary">
+                                          <?php echo read_date($publics['date']); ?>
+                                      </p>
+                                       <img src="https://www.aru.ac.tz/site/images/new_blinks.gif" class="w-30 blinkAnnouncment" alt="">
+                                                                  </div>
+                            </div>
+                        </div>
+                        
+                    <?php endforeach; ?>
+                    
+                     
+                                  </div>
+                                  
+                                
     </div>
-    <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-      <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-fade="" data-te-carousel-item="">
-        <video class="w-full aspect-video" autoplay="" loop="" muted="">
-          <source src="uploads/video/flowbite.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none !block data-[te-carousel-fade]:opacity-100 data-[te-carousel-fade]:z-[1]" data-te-carousel-fade="" data-te-carousel-item="" data-te-carousel-active="">
-        <video class="w-full aspect-video" autoplay="" loop="" muted="">
-          <source src="uploads/video/uss.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none" data-te-carousel-fade="" data-te-carousel-item="">
-        <video class="w-full aspect-video" autoplay="" loop="" muted="">
-          <source src="uploads/video/flowbite.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none" type="button" data-te-target="#carouselExampleCaptions" data-te-slide="prev">
-      <span class="inline-block h-8 w-8">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
-        </svg>
-      </span>
-      <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
-    </button>
-    <button class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none" type="button" data-te-target="#carouselExampleCaptions" data-te-slide="next">
-      <span class="inline-block h-8 w-8">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
-        </svg>
-      </span>
-      <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
-    </button>
-  </div>
-  
-    </div>
-    
- 
-    
-  </div>
-      </div>
-      
-    </section><!-- End Team Section -->
 
-
-
-
+            
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -265,7 +337,7 @@
               Main CAMPUS ,Changanyikeni <br>
               College COICT ,Sayansi <br>
               Dar Es Salaam, Wilaya Ya Ubungo<br>
-              United States <br><br>
+              Tanzania <br><br>
               <strong>Phone:</strong> +255 789 #### # <br>
               <strong>Email:</strong> UDSMinfo@example.com<br>
             </p>
@@ -337,6 +409,74 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+    <script src="https://www.aru.ac.tz/site/js/jquery.min.js"></script>
+    <script src="https://www.aru.ac.tz/site/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.aru.ac.tz/site/js/datatables.min.js"></script>
+    <script src="https://www.aru.ac.tz/site/js/slick.min.js"></script>
+    <script src="https://www.aru.ac.tz/site/js/owl.carousel.min.js"></script>
+    <script src="https://www.aru.ac.tz/site/js/custom.min.js"></script>
+    <script src="https://www.aru.ac.tz/admin/js/visitors-counter/client.min.js"></script>
+    <script src="https://www.aru.ac.tz/admin/js/visitors-counter/visitors.logs.js"></script>
+
+    <script src="https://www.aru.ac.tz/site/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.aru.ac.tz/site/js/slick.min.js"></script>
+
+    <script src="https://www.aru.ac.tz/site/js/custom.min.js"></script>
+
+    <script src="https://www.aru.ac.tz/site/js/magnific-popup.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+
+
+          /* Video - Magnific Popup */
+          $('.popup-youtube, .popup-vimeo').magnificPopup({
+              disableOn: 700,
+              type: 'iframe',
+              mainClass: 'mfp-fade',
+              removalDelay: 160,
+              preloader: false,
+              fixedContentPos: false,
+              iframe: {
+                  patterns: {
+                      youtube: {
+                          index: 'youtube.com/',
+                          id: function(url) {
+                              var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+                              if ( !m || !m[1] ) return null;
+                              return m[1];
+                          },
+                          src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+                      },
+                      vimeo: {
+                          index: 'vimeo.com/',
+                          id: function(url) {
+                              var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
+                              if ( !m || !m[5] ) return null;
+                              return m[5];
+                          },
+                          src: 'https://player.vimeo.com/video/%id%?autoplay=1'
+                      }
+                  }
+              }
+          });
+
+        });
+    </script>
+
+      <script type="text/javascript">
+  $(".meeting-slider").owlCarousel({
+        loop:true,
+        autoplay:true,
+        smartSpeed:3000,
+        autoplayHoverPause:true,
+        dots:true,
+        nav:false,
+        items:1,
+        animateOut: 'fadeOut',
+        navText: ["<i class='fas fa-angle-left fa-3x'></i> "," <i class='fas fa-angle-right fa-3x'></i>"]
+    });
+  </script>
 </body>
 
 </html>

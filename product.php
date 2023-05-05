@@ -40,7 +40,7 @@
             <div class="text-center pt-8 pb-4">
               
                  <?php if($product['media_id'] === '0'): ?>
-                    <img class="shadow-xl rounded-md" src="uploads/products/no_image.png" alt="">
+                    <img class="shadow-xl rounded-md" src="uploads/products/no_image.png" alt="image not found">
                   <?php else: ?>
                   <img class="shadow-xl rounded-md" src="uploads/products/<?php echo $product['image']; ?>" alt="">
                 <?php endif; ?>

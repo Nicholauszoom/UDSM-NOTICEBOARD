@@ -5,52 +5,68 @@
       <span>Dashboard</span>
     </a>
   </li>
-  <li>
-    <a href="#" class="submenu-toggle">
-      <i class="glyphicon glyphicon-user"></i>
-      <span>User Management</span>
+
+ <li>
+    <a href="group.php"> 
+      <i class="glyphicon glyphicon-cloud"></i>
+      <span>Manage Groups</span>
     </a>
-    <ul class="nav submenu">
-      <li><a href="group.php">Manage Groups</a> </li>
-      <li><a href="users.php">Manage Users</a> </li>
-   </ul>
+   
   </li>
 
+  <li>
+    <a href="users.php">
+      <i class="glyphicon glyphicon-user"></i>
+      <span>Manage Users</span>
+    </a>
+    
+  </li>
+
+  <li>
+    <a href="categorie.php">
+      <i class="glyphicon glyphicon-education"></i>
+      <span>Manage Department</span>
+    </a>
+  </li>
+</li>
+
+  <li>
+    <a href="course.php">
+      <i class="glyphicon glyphicon-list-alt"></i>
+      <span>Manage Course</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="admin_view_public_annoucement.php" >
+      <i class="glyphicon glyphicon-bell"></i>
+      <span>Public Annoucement</span>
+    </a>
+  </li>
 
 
  <li>
-    <a href="#" class="submenu-toggle">
-      <i class="glyphicon glyphicon-education"></i>
-      <span>University</span>
+    <a href="public_annnoucement.php" >
+      <i class="glyphicon glyphicon-file"></i>
+      <span>Add Public Annoucement</span>
     </a>
-    <ul class="nav submenu">
-       <li><a href="#">Manage College</a> </li>
-      <li><a href="categorie.php">Manage Department</a> </li>
-      <li><a href="course.php">Manage Course</a> </li>
-   </ul>
   </li>
 
-  <li>
-    <a href="#" class="submenu-toggle">
-      <i class="glyphicon glyphicon-bell"></i>
-      <span>Public Announcements</span>
-    </a>
-    <ul class="nav submenu">
-       <li><a href="product.php">Manage Public Announcement</a> </li>
-       <li><a href="public_annnoucement.php">Add Public Announcement</a> </li>
-   </ul>
-  </li>
-  
-  <li>
-    <a href="#" class="submenu-toggle">
+   <li>
+    <a href="product.php" >
       <i class="glyphicon glyphicon-bullhorn"></i>
-      <span>Announcement</span>
+      <span>Specific Annoucement</span>
     </a>
-    <ul class="nav submenu">
-       <li><a href="product.php">Manage Announcement</a> </li>
-       <li><a href="add_product.php">Add Announcement</a> </li>
-   </ul>
   </li>
+
+<li>
+    <a href="add_product.php" >
+      <i class="glyphicon glyphicon-blackboard"></i>
+      <span>Add Annoucement</span>
+    </a>
+  </li>
+
+  
   
   
  

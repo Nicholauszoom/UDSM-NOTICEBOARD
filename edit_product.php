@@ -23,10 +23,9 @@ if(!$product){
    if(empty($errors)){
        $p_name  = remove_junk($db->escape($_POST['product-title']));
        $p_cat   = (int)$_POST['product-categorie'];
-       $p_qty   = remove_junk($db->escape($_POST['product-quantity']));
-       $p_buy   = remove_junk($db->escape($_POST['buying-price']));
-       $p_sale  = remove_junk($db->escape($_POST['saleing-price']));
-       $p_suppl  = remove_junk($db->escape($_POST['product-supplier']));
+
+
+
        if (is_null($_POST['product-photo']) || $_POST['product-photo'] === "") {
          $media_id = '0';
        } else {

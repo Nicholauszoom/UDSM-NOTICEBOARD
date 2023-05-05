@@ -24,7 +24,7 @@
   <?php  if ($session->isUserLoggedIn(true)): ?>
     <header id="header">
      
-      <div class="header-content">
+      <div class="header-conteant">
          <div class="logo pull-left"> 
          <img class="img-avatar img-circle" src="https://udsm.ac.tz//upload/galleryphoto/20210428_081523_177_udsm%20logo.png" alt="" />
           </div>
